@@ -4,7 +4,7 @@
     {
         public override decimal Price
         {
-            get { return 3; }
+            get { return (decimal)0.9; }
         }
     }
 }

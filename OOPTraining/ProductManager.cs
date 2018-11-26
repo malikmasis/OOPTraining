@@ -13,7 +13,7 @@ namespace OOPTraining
         public void Sell(Product product)
         {
             decimal price = _customer.Price * product.Price;
-            Console.WriteLine(price);
+            Console.WriteLine(product.Name + ": " + price);
             Console.ReadLine();
         }
     }
