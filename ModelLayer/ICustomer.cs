@@ -1,0 +1,6 @@
+﻿namespace ModelLayer
+{
+    interface ICustomer
+    {
+    }
+}
