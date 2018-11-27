@@ -6,8 +6,17 @@ namespace OOPTraining
     {
         static void Main(string[] args)
         {
-            IProductService productService = new ProductManager(new Student { Name = "malo" });
-            productService.Sell(new Product { Name = "Laptop", Price = 1000 });
+            IProductService productServiceStudent = new ProductManager(
+                new Student() { Name = "Malo" },
+                new CentralBankAdapter()
+                );
+            productServiceStudent.Sell(new Product { Name = "Laptop", Price = 1000 }, Currency.Dolar);
+
+            IProductService productServiceOfficer = new ProductManager(
+             new Officer() { Name = "Xalo" },
+             new CentralBankAdapter()
+             );
+            productServiceOfficer.Sell(new Product { Name = "Laptop", Price = 1000 }, Currency.Dolar);
         }
     }
 }

@@ -4,6 +4,6 @@ namespace OOPTraining
 {
     internal interface IProductService
     {
-        void Sell(Product product);
+        void Sell(Product product,Currency currency);
     }
 }

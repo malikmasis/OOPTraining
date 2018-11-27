@@ -6,16 +6,16 @@
         public string Name { get; set; }
         public string Surname { get; set; }
 
-        private decimal price;
-        public virtual decimal Price
+        private decimal discount;
+        public virtual decimal Discount
         {
             get
             {
-                return price;
+                return discount;
             }
             set
             {
-                price = value;
+                discount = value;
             }
         }
     }

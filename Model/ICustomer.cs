@@ -2,7 +2,7 @@
 {
     public interface ICustomer
     {
-        decimal Price
+        decimal Discount
         {
             get; set;
         }

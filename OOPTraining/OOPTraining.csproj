@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CentralBankAdapter.cs" />
+    <Compile Include="CentralBankService.cs" />
+    <Compile Include="FakeBankService.cs" />
+    <Compile Include="IBankService.cs" />
     <Compile Include="IProductService.cs" />
     <Compile Include="ProductManager.cs" />
     <Compile Include="Program.cs" />
